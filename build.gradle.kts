@@ -16,7 +16,6 @@ apply {
 
     from("chat.gradle.kts")
     from("answer.gradle.kts")
-    from("copy.gradle.kts")
 }
 
 configure<ApplicationPluginConvention> {
