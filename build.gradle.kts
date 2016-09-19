@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${extra["kotlinVersion"]}")
+        classpath(kotlinModule("gradle-plugin"))
     }
 }
 
@@ -29,5 +29,7 @@ repositories {
 }
 
 dependencies {
-    compile("org.jetbrains.kotlin:kotlin-stdlib:${extra["kotlinVersion"]}")
+    compile(kotlinModule("stdlib-jre8"))
 }
+
+fun kotlinModule(module: String) = "org.jetbrains.kotlin:kotlin-$module:${extra["kotlinVersion"]}"
