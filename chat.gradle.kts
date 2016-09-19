@@ -11,7 +11,7 @@ task("chat") {
     dependsOn("goodbye") // dependsOn task name
 }
 
-task("mixItUp", ) {
+task("mixItUp") {
     dependsOn(helloTask, "goodbye")
 }
 

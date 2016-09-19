@@ -1,8 +1,9 @@
 buildscript {
-    extra["kotlinVersion"] = "1.0.3"
+    extra["kotlinVersion"] = "1.1-M01"
 
     repositories {
         jcenter()
+        maven { setUrl("http://dl.bintray.com/kotlin/kotlin-eap-1.1") }
     }
 
     dependencies {
@@ -24,6 +25,7 @@ configure<ApplicationPluginConvention> {
 
 repositories {
     jcenter()
+    maven { setUrl("http://dl.bintray.com/kotlin/kotlin-eap-1.1") }
 }
 
 dependencies {
